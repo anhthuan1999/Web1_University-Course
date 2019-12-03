@@ -1,0 +1,32 @@
+﻿
+#main p{
+    font-size:20px;
+}
+.imgmember {
+    margin-top: 52px;
+    width: 100%;
+}
+
+.register {
+    margin-top:5px;
+    padding: 10px;
+    background-color: #0094ff;
+    font-size: 25px;
+}
+
+    .register:hover {
+        background-color: #00ffff
+    }
+
+.imgcontent {
+    margin: 10px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+.register a {
+    text-decoration: none;
+    color: black;
+}

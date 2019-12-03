@@ -1,0 +1,35 @@
+﻿body {
+    margin-top:65px;
+}
+.maintable td{
+    padding-left:50px;
+}
+td .sidenav {
+    height: 300px;
+    width: 200px;
+    position: fixed;
+    background-color: #111;
+    overflow-x: hidden;
+    padding: 20px 0px;
+}
+
+    .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        font-size:20px;
+        color: #818181;
+        display: block;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+#mainbody {
+    padding-left: 200px;
+}
+tbody .header{
+    font-size:50px;
+}
+#mainbody p{
+    padding-left:50px;
+}
