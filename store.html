@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Cửa hàng</title>
-    <link href="images/LOGO.jpg" rel="icon" type="image/gif">
+    <link href="images/LOGO.png" rel="icon" type="image/gif">
     <link rel="stylesheet" href="../css/cssmenu.css" type="text/css" />
     <link rel="stylesheet" href="../css/cssstore.css" type="text/css" />
     <script src="../script/scriptstore.js"></script>
@@ -12,7 +12,7 @@
 <body>
     <header>
         <ul>
-            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.jpg" height="50" width="50" /></a></li>
+            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.png" height="50" width="50" /></a></li>
             <li><a href="index.html">Trang chủ</a></li>
             <li><a href="story.html">Câu chuyện</a></li>
             <li onmousemove="showmenu(0)" onmouseout="anmenu()">
@@ -33,8 +33,14 @@
                     <li><a href="hoptac.html">Hợp tác</a></li>
                 </ul>
             </li>
-            <li><a class="search"><img src="images/iconsearch.png" height="30" width="30" /></a></li>
+            <li onclick="showmenu(2)" class="search">
+                <input type="text" placeholder="Tìm sản phẩm" name="txtsearch" id="txtsearch" />
+                <img src="images/iconsearch.png" height="21" width="21" onclick="xulySearch()" />
+            </li>
         </ul>
+        <script type="text/javascript">
+            autocompletesearch()
+        </script>
     </header>
     <div id="main">
         <table width="100%">
@@ -70,7 +76,7 @@
     <footer>
         <div align="center">
             <div>
-                <a href="index.html"><img src="../images/LOGO.jpg" height="100" width="100" /></a>
+                <a href="index.html"><img src="../images/LOGO.png" height="100" width="100" /></a>
             </div>
             <div>
                 <ul>
@@ -92,6 +98,20 @@
                     </li>
                     <li>
                         <a href="hoptac.html">Hợp tác</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="vertical-align:top;">
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Kênh truyền thông</b><br />
+
+                    </li>
+                    <li class="liheaderfooter">
+                        <img src="../images/fbicon.png" height="30" width="30" />
+                        <img src="../images/instagram.png" height="30" width="30" />
+                        <img src="../images/youtube.png" height="30" width="30" />
                     </li>
                 </ul>
             </div>

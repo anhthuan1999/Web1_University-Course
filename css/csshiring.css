@@ -1,4 +1,7 @@
-﻿.header-hiring {
+﻿body{
+    font-size:20px;
+}
+.header-hiring {
     color: white;
     margin-top: 60px;
     padding: 10px 100px 100px;
@@ -28,8 +31,9 @@ h1 {
 }
 #idthongdiep td p {
     display: inline-block;
-    width: 300px;
+    width: 400px;
     word-wrap: break-word;
+    text-align:justify;
 }
 #idvtht {
     background: linear-gradient( rgba(20,20,20, .5), rgba(20,20,20, .5)), url( ../images/tuyendungText.jpg);

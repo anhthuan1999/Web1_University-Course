@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Chi tiết đăng ký</title>
+    <link rel="stylesheet" href="../css/cssmenu.css" type="text/css" />
+    <script src="../script/scriptdetailregister.js"></script>
+    <script src="../script/scriptheader.js"></script>
+    <link rel="stylesheet" href="../css/cssdetailregister.css" type="text/css" />
+
+</head>
+<body onload="loadingregister()">
+    <header>
+        <ul>
+            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.png" height="50" width="50" /></a></li>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="story.html">Câu chuyện</a></li>
+            <li onmousemove="showmenu(0)" onmouseout="anmenu()">
+                <a href="menu.html" title="Thực đơn">Thực đơn</a>
+                <ul>
+                    <li><a href="menu.html#daxay">Thức uống</a></li>
+                    <li><a href="menu.html#banhngot">Bánh ngọt</a></li>
+                    <li><a href="menu.html#sinhto">Sinh tố</a></li>
+                </ul>
+            </li>
+            <li><a href="discount.html" title="Ưu đãi">Ưu đãi</a></li>
+            <li><a href="hiring.html" title="Tuyển dụng">Tuyển dụng</a></li>
+            <li><a href="store.html" title="Cửa hàng">Cửa hàng</a></li>
+            <li onmousemove="showmenu(1)" onmouseout="anmenu()">
+                <a href="#" title="Liên hệ">Liên hệ</a>
+                <ul>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc3kvbnCoOYI-ipC4OBfwox8ynZHJLYiu_plTYVaag3libLSg/viewform?usp=sf_link" target="_blank">Góp ý</a></li>
+                    <li><a href="hoptac.html">Hợp tác</a></li>
+                </ul>
+            </li>
+            <li onclick="showmenu(2)" class="search">
+                <input type="text" placeholder="Tìm sản phẩm" name="txtsearch" id="txtsearch" />
+                <img src="images/iconsearch.png" height="21" width="21" onclick="xulySearch()" />
+            </li>
+        </ul>
+        <script type="text/javascript">
+            autocompletesearch()
+        </script>
+    </header>
+    <form name="frm">
+        <div align="center">
+            <h2>ĐĂNG KÝ THẺ THÀNH VIÊN JAVASCRIPT</h2>
+            <table width="600px" cellpadding="3">
+                <tr>
+                    <td>
+                        <label for="msthe">Mã số thẻ </label><b style="color:red">(*)</b><br />
+                        <input type="text" id="msthe" name="msthe" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">Họ và tên </label><b style="color:red">(*)</b><br />
+                        <input type="text" id="name" name="name" />
+                    </td>
+                    <td>
+                        <label for="phone">Số điện thoại </label><b style="color:red">(*)</b><br />
+                        <input type="tel" id="phone" name="phone" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Ngày sinh </label><b style="color:red">(*)</b><br />
+                        <select id="ngay" class="ngaysinh">
+                        </select>
+                        <select id="thang" class="ngaysinh">
+                        </select>
+                        <select id="nam" class="ngaysinh">
+                        </select>
+                    </td>
+                    <td>
+                        <label for="email">Email</label><b style="color:red">(*)</b><br />
+                        <input type="email" id="email" name="email" />
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style=" font-size:18px;">
+                        (Số điện thoại, ngày sinh nhật và địa chỉ email sau khi tạo tài khoản sẽ không thể thay đổi, vui lòng liên hệ bộ phận CSKH của chúng tôi tại (+84 28) 6263 0377 - 78 (số máy lẻ 604) nếu bạn có bất kỳ thắc mắc nào.)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Địa chỉ liên hệ
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">Tỉnh/Thành phố </label><b style="color:red">(*)</b><br />
+                        <select id="city" onchange="chonquan(this.value)">
+                            <option selected="selected">Chọn tỉnh</option>"+
+                            <option value="1">Hồ Chí Minh</option>"+
+                            <option value="71">Thái Nguyên</option>"+
+                            <option value="78">Hải Phòng</option>"+
+                            <option value="81">Bắc Giang</option>"+
+                            <option value="84">Vĩnh Phúc</option>"+
+                            <option value="90">Thanh Hóa</option>"+
+                            <option value="92">Hà Tĩnh</option>"+
+                            <option value="97">Quảng Nam</option>"+
+                            <option value="100">Phú Yên</option>"+
+                            <option value="101">Khánh Hoà</option>"+
+                            <option value="104">Gia Lai</option>"+
+                            <option value="112">Tây Ninh</option>"+
+                            <option value="113">Đồng Nai</option>"+
+                            <option value="115">Long An</option>"+
+                            <option value="117">An Giang</option>"+
+                            <option value="119">Tiền Giang</option>"+
+                            <option value="120">Bến Tre</option>"+
+                            <option value="121">Vĩnh Long</option>"+
+                            <option value="122">Trà Vinh</option>"+
+                            <option value="123">Cần Thơ</option>"+
+                            <option value="124">Sóc Trăng</option>"+
+                            <option value="125">Kiên Giang</option>"+
+                            <option value="126">Bạc Liêu</option>"+
+                            <option value="127">Cà Mau</option>"+
+                            <option value="128">Quảng Bình</option>"+
+                            <option value="129">Bắc Ninh</option>"+
+                            <option value="130">Bình Dương</option>"+
+                            <option value="131">Bình Định</option>"+
+                            <option value="132">Đà Nẵng</option>"+
+                            <option value="133">Đồng Tháp</option>"+
+                            <option value="135">Hưng Yên</option>"+
+                            <option value="136">Kon Tum</option>"+
+                            <option value="137">Nam Định</option>"+
+                            <option value="138">Ninh Bình</option>"+
+                            <option value="139">Phú Thọ</option>"+
+                            <option value="140">Quảng Ninh</option>"+
+                            <option value="141">Thái Bình</option>"+
+                            <option value="142">Đắk Lắk</option>"+
+                            <option value="143">Hậu Giang</option>"+
+                            <option value="144">Hải Dương</option>"+
+                            <option value="145">Lạng Sơn</option>"+
+                            <option value="146">Lào Cai</option>"+
+                            <option value="147">Yên Bái</option>"+
+                            <option value="148">Tuyên Quang</option>"+
+                            <option value="149">Hà Giang</option>"+
+                            <option value="150">Cao Bằng</option>"+
+                            <option value="151">Điện Biên</option>"+
+                            <option value="152">Sơn La</option>"+
+                            <option value="153">Hòa Bình</option>"+
+                            <option value="154">Lai Châu</option>"+
+                            <option value="155">Hà Nam</option>"+
+                            <option value="156">Nghệ An</option>"+
+                            <option value="157">Ninh Thuận</option>"+
+                            <option value="158">Bình Thuận</option>"+
+                            <option value="159">Lâm Đồng</option>"+
+                            <option value="160">Đắk Nông</option>"+
+                            <option value="161">Quảng Ngãi</option>"+
+                            <option value="162">Quảng Trị</option>"+
+                            <option value="163">Thừa Thiên - Huế</option>"+
+                            <option value="164">Bà Rịa - Vũng Tàu</option>"+
+                            <option value="165">Bắc Kạn</option>"+
+                            <option value="166">Bình Phước</option>"+
+                            <option value="167">Hà Nội</option>"+
+                        </select>
+                    </td>
+
+
+                    <td>
+                        <label for="district">Quận/Huyện</label><b style="color:red">(*)</b><br />
+                        <select id="district">
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Mật khẩu </label><b style="color:red">(*)</b><br />
+                        <input type="password" id="pass" name="pass" />
+                    </td>
+                    <td>
+                        <label for="reenter">Nhập lại mật khẩu </label><b style="color:red">(*)</b><br />
+                        <input type="password" id="reenter" name="reenter" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style=" font-size:18px;">Khi bấm Hoàn tất Đăng ký Thẻ Thành viên JavaScript, bạn đồng ý bị ràng buộc bởi những Điều khoản & Điều kiện sử dụng này và tất cả các Điều khoản được kết hợp bằng việc tham chiếu.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="dongynhanthu" name="dongynhanthu" />
+                        <label for="dongynhanthu">Đồng ý nhận thư từ chúng tôi</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" value="Đăng ký thành viên" class="button" onclick="xuLy()" />
+                        <input type="reset" value="Nhập lại" class="button" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+
+    <footer>
+        <div align="center">
+            <div>
+                <a href="index.html"><img src="../images/LOGO.png" height="100" width="100" /></a>
+            </div>
+            <div>
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Tin tức</b>
+                    </li>
+                    <li><a href="story.html">Về chúng tôi</a></li>
+                    <li><a href="bestsales.html">Hôm nay tui có</a></li>
+                </ul>
+            </div>
+            <div>
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Liên hệ</b>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3kvbnCoOYI-ipC4OBfwox8ynZHJLYiu_plTYVaag3libLSg/viewform?usp=sf_link" target="_blank">Góp ý</a>
+                    </li>
+                    <li>
+                        <a href="hoptac.html">Hợp tác</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="vertical-align:top;">
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Kênh truyền thông</b><br />
+
+                    </li>
+                    <li class="liheaderfooter">
+                        <img src="../images/fbicon.png" height="30" width="30" />
+                        <img src="../images/instagram.png" height="30" width="30" />
+                        <img src="../images/youtube.png" height="30" width="30" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

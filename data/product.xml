@@ -503,7 +503,8 @@
     <price>52000</price>
     <image>../images/TS13.png</image>
   </product>
-
+  </TS>
+  <TH>
 <product>
     <id>TH01</id>
     <name>Pudding trứng</name>
@@ -511,8 +512,8 @@
     <price>10000</price>
     <image>../images/TH01.png</image>
   </product>
-  </TS>
-  <TH>
+
+
 <product>
     <id>TH02</id>
     <name>Pudding trứng</name>

@@ -2,16 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link href="images/LOGO.jpg" rel="icon" type="image/gif">
+    <link href="images/LOGO.png" rel="icon" type="image/gif">
     <title>Tuyển dụng</title>
     <link rel="stylesheet" href="../css/cssmenu.css" type="text/css" />
     <link rel="stylesheet" href="../css/csshiring.css" type="text/css" />
-    <script src="../script/scriptheader.js"></script>
+    <script src="script/scriptheader.js"></script>
 </head>
 <body>
     <header>
         <ul>
-            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.jpg" height="50" width="50" /></a></li>
+            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.png" height="50" width="50" /></a></li>
             <li><a href="index.html">Trang chủ</a></li>
             <li><a href="story.html">Câu chuyện</a></li>
             <li onmousemove="showmenu(0)" onmouseout="anmenu()">
@@ -32,8 +32,14 @@
                     <li><a href="hoptac.html">Hợp tác</a></li>
                 </ul>
             </li>
-            <li><a class="search"><img src="images/iconsearch.png" height="30" width="30" /></a></li>
+            <li onclick="showmenu(2)" class="search">
+                <input type="text" placeholder="Tìm sản phẩm" name="txtsearch" id="txtsearch" />
+                <img src="images/iconsearch.png" height="21" width="21" onclick="xulySearch()" />
+            </li>
         </ul>
+        <script type="text/javascript">
+            autocompletesearch()
+        </script>
     </header>
     <div class="header-hiring">
         <h1 align="center">Tuyển dụng</h1>
@@ -43,7 +49,7 @@
     </div>
     <div align="center">
         <p align="center" id="idthanhvien">Nhân viên là cốt lõi của bền vững</p>
-        <p>Chúng tôi tin rằng xây dựng được hạnh phúc, chú trọng con đường sự nghiệp cho nhân viên, sự hài lòng trong công việc và môi trường tích cực sẽ là nền tảng lâu dài cho sự phát triển bền vững của JavaScript. Hãy đến với chúng tôi khi nhận thấy những giá trị này phù hợp với bạn!</p>
+        <p style="width:1000px;">Chúng tôi tin rằng xây dựng được hạnh phúc, chú trọng con đường sự nghiệp cho nhân viên, sự hài lòng trong công việc và môi trường tích cực sẽ là nền tảng lâu dài cho sự phát triển bền vững của JavaScript. Hãy đến với chúng tôi khi nhận thấy những giá trị này phù hợp với bạn!</p>
 
         <hr />
 
@@ -76,23 +82,45 @@
 
         <div id="idvitri">
             <h2>Vị trí tuyển dụng</h2>
-            <table width="30%" cellspacing="15">
+            <table width="70%" cellspacing="15">
                 <tr>
-                    <td>Cửa hàng trưởng</td>
-                    <td><a href="#" class="ungtuyen">Ứng tuyển</a></td>
+                    <td align="left">
+                        Tuyển dụng <br />
+                        <hr style="width:50px;margin-left:0px;" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Cộng tác viên tuyển dụng</td>
+                    <td align="right" width="380px">
+                        Fulltime, Quận 3<br />
+                        Bộ phận Tuyển dụng tìm kiếm nhân sự phụ trách sáng tạo nội dung, làm việc tại Quận 3
+                    </td>
+                    <td width="150px"><a href="detailhiring.html?id=1" class="ungtuyen">Ứng tuyển</a></td>
                 </tr>
                 <tr>
-                    <td>Ca trưởng</td>
-                    <td><a href="#" class="ungtuyen">Ứng tuyển</a></td>
+                    <td align="left">
+                        Kế toán<br />
+                        <hr style="width:50px;margin-left:0px;" />
+                    </td>
                 </tr>
                 <tr>
-                    <td>Nhân viên pha chế</td>
-                    <td><a href="#" class="ungtuyen">Ứng tuyển</a></td>
+                    <td>Kế toán tổng hợp</td>
+                    <td align="right">Fulltime, Quận 3</td>
+                    <td width="150px"><a href="detailhiring.html?id=2" class="ungtuyen">Ứng tuyển</a></td>
                 </tr>
                 <tr>
-                    <td>Nhân viên giao hàng</td>
-                    <td><a href="#" class="ungtuyen">Ứng tuyển</a></td>
+                    <td align="left">
+                        Quốc tế<br />
+                        <hr style="width:50px;margin-left:0px;" />
+                    </td>
                 </tr>
+                <tr>
+                    <td>Trợ lý quản lý dự án</td>
+                    <td align="right">Fulltime, Quận 3</td>
+                    <td width="150px"><a href="detailhiring.html?id=3" class="ungtuyen">Ứng tuyển</a></td>
+                </tr>
+
             </table>
         </div>
     </div>
@@ -101,7 +129,7 @@
     <footer>
         <div align="center">
             <div>
-                <a href="index.html" ><img src="../images/LOGO.jpg" height="100" width="100" /></a>
+                <a href="index.html"><img src="../images/LOGO.png" height="100" width="100" /></a>
             </div>
             <div>
                 <ul>
@@ -123,6 +151,20 @@
                     </li>
                     <li>
                         <a href="hoptac.html">Hợp tác</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="vertical-align:top;">
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Kênh truyền thông</b><br />
+
+                    </li>
+                    <li class="liheaderfooter">
+                        <img src="../images/fbicon.png" height="30" width="30" />
+                        <img src="../images/instagram.png" height="30" width="30" />
+                        <img src="../images/youtube.png" height="30" width="30" />
                     </li>
                 </ul>
             </div>

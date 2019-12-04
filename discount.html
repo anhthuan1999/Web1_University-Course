@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <link href="images/LOGO.jpg" rel="icon" type="image/gif">
+    <link href="images/LOGO.png" rel="icon" type="image/gif">
     <meta charset="utf-8" />
     <title>Khuyến mãi</title>
     <link rel="stylesheet" href="../css/cssmenu.css" type="text/css" />
@@ -9,10 +9,12 @@
     <style type="text/css">
         #main {
             margin-top: 60px;
+            font-size:20px;
         }
 
-        #tablekhuyenmai td {
-            border: solid 1px
+        #tablekhuyenmai td:not(.info) {
+            border: solid 1px;
+            cursor:pointer;
         }
 
         #iduudai1 {
@@ -39,7 +41,7 @@
 <body>
     <header>
         <ul>
-            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.jpg" height="50" width="50" /></a></li>
+            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.png" height="50" width="50" /></a></li>
             <li><a href="index.html">Trang chủ</a></li>
             <li><a href="story.html">Câu chuyện</a></li>
             <li onmousemove="showmenu(0)" onmouseout="anmenu()">
@@ -60,29 +62,65 @@
                     <li><a href="hoptac.html">Hợp tác</a></li>
                 </ul>
             </li>
-            <li>
-                <a class="search"><img src="images/iconsearch.png" height="30" width="30" /></a>
+            <li onclick="showmenu(2)" class="search">
+                <input type="text" placeholder="Tìm sản phẩm" name="txtsearch" id="txtsearch" />
+                <img src="images/iconsearch.png" height="21" width="21" onclick="xulySearch()" />
             </li>
         </ul>
+        <script type="text/javascript">
+            autocompletesearch()
+        </script>
     </header>
     <div id="main">
         <img src="../images/uudaiCover.jpg" style="width:100%" />
         <h1 align="center">Khuyến mãi mới</h1>
         <table cellspacing="20" align="center" id="tablekhuyenmai">
             <tr>
-                <td width="600" height="300" id="iduudai1">
+                <td width="600" height="300" id="iduudai1" onclick="javascript: window.location.href='detaildiscount.html?id=1'">
                     &nbsp;
                 </td>
-                <td width="600" height="300" id="iduudai2">
+                <td width="600" height="300" id="iduudai2" onclick="javascript: window.location.href='detaildiscount.html?id=2'">
                     &nbsp;
                 </td>
             </tr>
             <tr>
-                <td width="600" height="300" id="iduudai3">
+                <td class="info">
+                    <div align="center">
+                        <b>Now - Giảm 20% trà sữa</b><br />
+                        01/12/2019  - 25/12/2019<br />
+                        Áp dụng khi mua hàng tại CH
+                    </div>
+                </td>
+                <td class="info">
+                    <div align="center">
+                        <b>Thanh toán điện tử - Giảm ngay 20%</b><br />
+                        01/12/2019  - 15/12/2019<br />
+                        Áp dụng khi mua hàng tại CH
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="600" height="300" id="iduudai3" onclick="javascript: window.location.href='detaildiscount.html?id=3'">
                     &nbsp;
                 </td>
-                <td width="600" height="300" id="iduudai4">
+                <td width="600" height="300" id="iduudai4" onclick="javascript: window.location.href='detaildiscount.html?id=4'">
                     &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td class="info">
+                    <div align="center">
+                        <b>Thứ 2 - Mua 1 tặng 1</b><br />
+                        01/12/2019  - 31/12/2019<br />
+                        Áp dụng khi mua hàng tại CH
+                    </div>
+                </td>
+                <td class="info">
+                    <div align="center">
+                        <b>Thứ 3 - Miễn phí Topping</b><br />
+                        01/12/2019  - 31/12/2019<br />
+                        Áp dụng khi mua hàng tại CH
+                    </div>
                 </td>
             </tr>
         </table>
@@ -90,7 +128,7 @@
     <footer>
         <div align="center">
             <div>
-                <a href="index.html"><img src="../images/LOGO.jpg" height="100" width="100" /></a>
+                <a href="index.html"><img src="../images/LOGO.png" height="100" width="100" /></a>
             </div>
             <div>
                 <ul>
@@ -112,6 +150,20 @@
                     </li>
                     <li>
                         <a href="hoptac.html">Hợp tác</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="vertical-align:top;">
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Kênh truyền thông</b><br />
+
+                    </li>
+                    <li class="liheaderfooter">
+                        <img src="../images/fbicon.png" height="30" width="30" />
+                        <img src="../images/instagram.png" height="30" width="30" />
+                        <img src="../images/youtube.png" height="30" width="30" />
                     </li>
                 </ul>
             </div>

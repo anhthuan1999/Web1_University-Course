@@ -1,0 +1,108 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tìm kiếm</title>
+    <link rel="stylesheet" href="../css/cssmenu.css" type="text/css" />
+    <script src="../script/scriptheader.js"></script>
+    <script src="../script/scriptsearch.js"></script>
+    <style type="text/css">
+        body{
+            margin-top:80px;
+        }
+    </style>
+</head>
+<body onload="loading()">
+    <header>
+        <ul>
+            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.png" height="50" width="50" /></a></li>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="story.html">Câu chuyện</a></li>
+            <li onmousemove="showmenu(0)" onmouseout="anmenu()">
+                <a href="menu.html" title="Thực đơn">Thực đơn</a>
+                <ul>
+                    <li><a href="menu.html#daxay">Thức uống</a></li>
+                    <li><a href="menu.html#banhngot">Bánh ngọt</a></li>
+                    <li><a href="menu.html#sinhto">Sinh tố</a></li>
+                </ul>
+            </li>
+            <li><a href="discount.html" title="Ưu đãi">Ưu đãi</a></li>
+            <li><a href="hiring.html" title="Tuyển dụng">Tuyển dụng</a></li>
+            <li><a href="store.html" title="Cửa hàng">Cửa hàng</a></li>
+            <li onmousemove="showmenu(1)" onmouseout="anmenu()">
+                <a href="#" title="Liên hệ">Liên hệ</a>
+                <ul>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc3kvbnCoOYI-ipC4OBfwox8ynZHJLYiu_plTYVaag3libLSg/viewform?usp=sf_link" target="_blank">Góp ý</a></li>
+                    <li><a href="hoptac.html">Hợp tác</a></li>
+                </ul>
+            </li>
+            <li onclick="showmenu(2)" class="search">
+                <input type="text" placeholder="Tìm sản phẩm" name="txtsearch" id="txtsearch" />
+                <img src="images/iconsearch.png" height="21" width="21" onclick="xulySearch()" />
+            </li>
+        </ul>
+        <script type="text/javascript">
+            autocompletesearch()
+        </script>
+    </header>
+    <div align="center">
+        <h1>KẾT QUẢ TÌM KIẾM</h1>
+        <h2 id="infoloc"></h2>
+
+        <table width="50%">
+            <tr>
+                <td id="mainbody">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <footer>
+        <div align="center">
+            <div>
+                <a href="index.html"><img src="../images/LOGO.png" height="100" width="100" /></a>
+            </div>
+            <div>
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Tin tức</b>
+                    </li>
+                    <li><a href="story.html">Về chúng tôi</a></li>
+                    <li><a href="bestsales.html">Hôm nay tui có</a></li>
+                </ul>
+            </div>
+            <div>
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Liên hệ</b>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3kvbnCoOYI-ipC4OBfwox8ynZHJLYiu_plTYVaag3libLSg/viewform?usp=sf_link" target="_blank">Góp ý</a>
+                    </li>
+                    <li>
+                        <a href="hoptac.html">Hợp tác</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="vertical-align:top;">
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Kênh truyền thông</b><br />
+
+                    </li>
+                    <li class="liheaderfooter">
+                        <img src="../images/fbicon.png" height="30" width="30" />
+                        <img src="../images/instagram.png" height="30" width="30" />
+                        <img src="../images/youtube.png" height="30" width="30" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

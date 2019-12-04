@@ -3,44 +3,53 @@
 <head>
     <meta charset="utf-8" />
     <title>Thực đơn</title>
-    <link href="images/LOGO.jpg" rel="icon" type="image/gif">
+    <link href="images/LOGO.png" rel="icon" type="image/gif">
     <link rel="stylesheet" href="../css/cssmenu.css" type="text/css" />
     <link rel="stylesheet" href="../css/cssthucdon.css" type="text/css" />
-    <script src="script/scriptheader.js"></script>
+    <script src="../script/scriptheader.js"></script>
     <script src="../script/scriptmenu.js"></script>
 </head>
 <body onload="loading()">
-        <header>
-            <ul>
-                <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.jpg" height="50" width="50" /></a></li>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="story.html">Câu chuyện</a></li>
-                <li onmousemove="showmenu(0)" onmouseout="anmenu()">
-                    <a href="menu.html" title="Thực đơn">Thực đơn</a>
-                    <ul>
-                        <li><a href="menu.html#daxay">Thức uống</a></li>
-                        <li><a href="menu.html#banhngot">Bánh ngọt</a></li>
-                        <li><a href="menu.html#sinhto">Sinh tố</a></li>
-                    </ul>
-                </li>
-                <li><a href="discount.html" title="Ưu đãi">Ưu đãi</a></li>
-                <li><a href="hiring.html" title="Tuyển dụng">Tuyển dụng</a></li>
-                <li><a href="store.html" title="Cửa hàng">Cửa hàng</a></li>
-                <li onmousemove="showmenu(1)" onmouseout="anmenu()">
-                    <a href="#" title="Liên hệ">Liên hệ</a>
-                    <ul>
-                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc3kvbnCoOYI-ipC4OBfwox8ynZHJLYiu_plTYVaag3libLSg/viewform?usp=sf_link" target="_blank">Góp ý</a></li>
-                        <li><a href="hoptac.html">Hợp tác</a></li>
-                    </ul>
-                </li>
-                <li><a class="search"><img src="images/iconsearch.png" height="30" width="30" /></a></li>
-            </ul>
-        </header>
+    <header>
+        <ul>
+            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.png" height="50" width="50" /></a></li>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="story.html">Câu chuyện</a></li>
+            <li onmousemove="showmenu(0)" onmouseout="anmenu()">
+                <a href="menu.html" title="Thực đơn">Thực đơn</a>
+                <ul>
+                    <li><a href="menu.html#daxay">Thức uống</a></li>
+                    <li><a href="menu.html#banhngot">Bánh ngọt</a></li>
+                    <li><a href="menu.html#sinhto">Sinh tố</a></li>
+                </ul>
+            </li>
+            <li><a href="discount.html" title="Ưu đãi">Ưu đãi</a></li>
+            <li><a href="hiring.html" title="Tuyển dụng">Tuyển dụng</a></li>
+            <li><a href="store.html" title="Cửa hàng">Cửa hàng</a></li>
+            <li onmousemove="showmenu(1)" onmouseout="anmenu()">
+                <a href="#" title="Liên hệ">Liên hệ</a>
+                <ul>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc3kvbnCoOYI-ipC4OBfwox8ynZHJLYiu_plTYVaag3libLSg/viewform?usp=sf_link" target="_blank">Góp ý</a></li>
+                    <li><a href="hoptac.html">Hợp tác</a></li>
+                </ul>
+            </li>
+            <li onclick="showmenu(2)" class="search">
+                <input type="text" placeholder="Tìm sản phẩm" name="txtsearch" id="txtsearch" />
+                <img src="images/iconsearch.png" height="21" width="21" onclick="xulySearch()" />
+            </li>
+        </ul>
+        <script type="text/javascript">
+            autocompletesearch()
+        </script>
+    </header>
+    <div align="center">
+        <img src="../images/CoverMenu.jpg" style="width:100%; margin-bottom:20px;" />
 
-        <table width="100%" class="maintable">
+        <table class="maintable" cellpadding="1">
+
             <tr>
-                <td width="150px" align="left" valign="top">
-                    <div class="sidenav">
+                <td width="100px" align="left" valign="top">
+                    <div class="sidenav" id="idsidenav">
                         <a href="#bestsales">Bán chạy nhất</a>
                         <a href="#banhngot">Bánh ngọt</a>
                         <a href="#daxay">Đá xay</a>
@@ -54,36 +63,50 @@
                 </td>
             </tr>
         </table>
-
-        <footer>
-            <div align="center">
-                <div>
-                    <a href="index.html"><img src="../images/LOGO.jpg" height="100" width="100" /></a>
-                </div>
-                <div>
-                    <ul>
-                        <li class="liheaderfooter">
-                            <b class="header-footer">Tin tức</b>
-                        </li>
-                        <li><a href="story.html">Về chúng tôi</a></li>
-                        <li><a href="bestsales.html">Hôm nay tui có</a></li>
-                    </ul>
-                </div>
-                <div>
-
-                    <ul>
-                        <li class="liheaderfooter">
-                            <b class="header-footer">Liên hệ</b>
-                        </li>
-                        <li>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3kvbnCoOYI-ipC4OBfwox8ynZHJLYiu_plTYVaag3libLSg/viewform?usp=sf_link" target="_blank">Góp ý</a>
-                        </li>
-                        <li>
-                            <a href="hoptac.html">Hợp tác</a>
-                        </li>
-                    </ul>
-                </div>
+    </div>
+    <footer>
+        <div align="center">
+            <div>
+                <a href="index.html"><img src="../images/LOGO.png" height="100" width="100" /></a>
             </div>
-        </footer>
+            <div>
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Tin tức</b>
+                    </li>
+                    <li><a href="story.html">Về chúng tôi</a></li>
+                    <li><a href="bestsales.html">Hôm nay tui có</a></li>
+                </ul>
+            </div>
+            <div>
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Liên hệ</b>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3kvbnCoOYI-ipC4OBfwox8ynZHJLYiu_plTYVaag3libLSg/viewform?usp=sf_link" target="_blank">Góp ý</a>
+                    </li>
+                    <li>
+                        <a href="hoptac.html">Hợp tác</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="vertical-align:top;">
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Kênh truyền thông</b><br />
+
+                    </li>
+                    <li class="liheaderfooter">
+                        <img src="../images/fbicon.png" height="30" width="30" />
+                        <img src="../images/instagram.png" height="30" width="30" />
+                        <img src="../images/youtube.png" height="30" width="30" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

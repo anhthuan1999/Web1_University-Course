@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Câu chuyện của chúng tôi</title>
-    <link href="images/LOGO.jpg" rel="icon" type="image/gif">
+    <link href="images/LOGO.png" rel="icon" type="image/gif">
     <link rel="stylesheet" href="../css/cssmenu.css" type="text/css" />
     <script src="script/scriptheader.js"></script>
     <style type="text/css">
@@ -27,7 +27,7 @@
 <body>
     <header>
         <ul>
-            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.jpg" height="50" width="50" /></a></li>
+            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.png" height="50" width="50" /></a></li>
             <li><a href="index.html">Trang chủ</a></li>
             <li><a href="story.html">Câu chuyện</a></li>
             <li onmousemove="showmenu(0)" onmouseout="anmenu()">
@@ -48,8 +48,14 @@
                     <li><a href="hoptac.html">Hợp tác</a></li>
                 </ul>
             </li>
-            <li><a class="search"><img src="images/iconsearch.png" height="30" width="30" /></a></li>
+            <li onclick="showmenu(2)" class="search">
+                <input type="text" placeholder="Tìm sản phẩm" name="txtsearch" id="txtsearch" />
+                <img src="images/iconsearch.png" height="21" width="21" onclick="xulySearch()" />
+            </li>
         </ul>
+        <script type="text/javascript">
+            autocompletesearch()
+        </script>
     </header>
     <table cellspacing="30" id="main">
         <tr>
@@ -61,7 +67,8 @@
                     <img src="images/cauchuyenImageStory1.jpg" height="200" width="200" align="left" class="imgcontent" />
                     Từ tình yêu với Việt Nam và niềm đam mê cà phê,năm 2015, thương hiệu JavaScript của chúng tôi đã ra đời với khát vọng nâng tầm di sản cà phê lâu đời của Việt Nam và lan rộng tinh thần tự hào, kết nối hài hoài giữa truyền thống với hiện đại.
                     Qua một chặng đường dài, chúng tôi đã không ngừng mang đến những sản phẩm cà phê thơm ngon, sánh đượm trong không gian thoải mái và lịch sự. Những ly cà phê của chúng tôi không chỉ đơn thuần là thức uống quen thuộc mà còn mang trên mình một sứ mệnh văn hóa phản ánh một phần nếp sống hiện đại của người Việt Nam.
-                    Đến nay, JavaScript vẫn không ngừng nỗ lực đem đến trải nghiệm tinh thần ngày xưa qua không gian độc đáo, thức uống chất lượng, và dịch vụ tận tình. JavaScript ấp ủ lan tiến xa để tỏa cảm hứng văn hóa cội nguồn Việt Nam đến bạn bè thế giới.</p>
+                    Đến nay, JavaScript vẫn không ngừng nỗ lực đem đến trải nghiệm tinh thần ngày xưa qua không gian độc đáo, thức uống chất lượng, và dịch vụ tận tình. JavaScript ấp ủ lan tiến xa để tỏa cảm hứng văn hóa cội nguồn Việt Nam đến bạn bè thế giới.
+                </p>
             <td>
                 <a href="hiring.html" title="Tuyển dụng">
                     <img src="images/cauchuyenTuyendung.jpg" height="200" width="200" class="imgcontent" />
@@ -94,7 +101,7 @@
     <footer>
         <div align="center">
             <div>
-                <a href="index.html"><img src="../images/LOGO.jpg" height="100" width="100" /></a>
+                <a href="index.html"><img src="../images/LOGO.png" height="100" width="100" /></a>
             </div>
             <div>
                 <ul>
@@ -116,6 +123,20 @@
                     </li>
                     <li>
                         <a href="hoptac.html">Hợp tác</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="vertical-align:top;">
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <b class="header-footer">Kênh truyền thông</b><br />
+
+                    </li>
+                    <li class="liheaderfooter">
+                        <img src="../images/fbicon.png" height="30" width="30" />
+                        <img src="../images/instagram.png" height="30" width="30" />
+                        <img src="../images/youtube.png" height="30" width="30" />
                     </li>
                 </ul>
             </div>
