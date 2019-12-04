@@ -10,7 +10,7 @@
     <script src="script/scriptheader.js"></script>
 </head>
 <body onload="loading()">
-    <header>
+    <header onload="autocompletesearch()">
         <ul>
             <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.png" height="50" width="50" /></a></li>
             <li><a href="index.html">Trang chủ</a></li>
@@ -33,14 +33,12 @@
                     <li><a href="hoptac.html">Hợp tác</a></li>
                 </ul>
             </li>
-            <li onclick="showmenu(2)" class="search">
+            <li class="search">
                 <input type="text" placeholder="Tìm sản phẩm" name="txtsearch" id="txtsearch" />
                 <img src="images/iconsearch.png" height="21" width="21" onclick="xulySearch()" />
             </li>
         </ul>
-        <script type="text/javascript">
-            autocompletesearch()
-        </script>
+
     </header>
 
     <table width="100%" id="maintable" cellspacing="15">
