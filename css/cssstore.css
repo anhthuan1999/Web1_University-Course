@@ -1,16 +1,16 @@
-﻿.header {
+﻿.headerstore {
     padding: 100px;
     background: linear-gradient( rgba(20,20,20, .5), rgba(20,20,20, .5)), url( ../images/cuahang.jpg);
-    background-size:100% auto;
+    background-size: 100% auto;
 }
-#main{
-    color:white;
-    font-size:20px;
+.headerstore h2 {
+    color: white;
+    font-size: 30px;
 }
-    #main select {
-        font-size: 15px;
-        padding:5px;
-    }
+.headerstore select {
+    font-size: 15px;
+    padding: 5px;
+}
 #idlistdanhsach{
     color:black;
     line-height:2;
