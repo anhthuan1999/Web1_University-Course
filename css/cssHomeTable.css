@@ -2,7 +2,7 @@
 #slide {
     margin-left: 0%;
     display: inline-block;
-    width: 390px;
+    width: 500px;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     transition-duration: 1s;
@@ -12,8 +12,8 @@
     }
 
 .wrapper:hover #slide {
-    transition-duration:1s;
-    margin-left: 67.5%;
+    transition-duration: 1s;
+    margin-left: 700px;
 }
 
 #tableimginfo td {
@@ -37,16 +37,22 @@
     background-color: rgba(255, 241, 208, 0.7);
     height: 50px;
     padding: 15px;
-    transition: 0.6s;
+    transition: 0.5s;
     display: inline-block;
 }
 #tableimginfo a {
     color: black;
     text-decoration:none;
 }
-    #tableimginfo p:hover {
-        margin-bottom:100px;
-    }
+#idstory:hover p {
+    margin-bottom: 100px;
+}
+#idstore:hover p {
+    margin-bottom: 100px;
+}
+#idbestsales:hover p {
+    margin-bottom: 100px;
+}
     
     
 

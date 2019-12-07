@@ -1,14 +1,14 @@
-﻿.slideshow-container{
-    display:block;
+﻿.slideshow-container {
     margin-top:55px;
 }
 .mySlides {
-    display: none;
-    max-width: 100%;
+    
+    display: block;
+    width: 100%;
+    margin-left: 0px;
 }
-    .mySlides img{
-        max-width:100%;
-
+    .mySlides img {
+        width: 100%;
     }
 .prev, .next {
     cursor: pointer;
@@ -28,7 +28,7 @@
     left:0px;
 }
 .next {
-    right: 8px;
+    right: 0px;
     border-radius: 3px 0 0 3px;
 }
 

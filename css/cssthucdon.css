@@ -4,6 +4,11 @@
 .maintable td{
     padding-left:20px;
 }
+
+#mainbody td:hover img {
+    cursor:pointer;
+    opacity: 0.5;
+}
 td .sidenav {
     height: 300px;
     width: 200px;
@@ -27,6 +32,6 @@ td .sidenav {
             color: #f1f1f1;
         }
 
-tbody .header{
+ .header{
     font-size:50px;
 }

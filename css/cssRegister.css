@@ -1,6 +1,10 @@
 ﻿
+body {
+    font-size: 20px;
+}
 #main p{
-    font-size:20px;
+    
+    width:900px;
 }
 .imgmember {
     margin-top: 52px;
@@ -8,10 +12,10 @@
 }
 
 .register {
-    margin-top:5px;
     padding: 10px;
     background-color: #0094ff;
     font-size: 25px;
+
 }
 
     .register:hover {
