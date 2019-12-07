@@ -1,0 +1,60 @@
+﻿body{
+    font-size:20px;
+}
+.header-hiring {
+    color: white;
+    margin-top: 50px;
+    padding: 10px 100px 100px;
+    background: linear-gradient( rgba(20,20,20, .5), rgba(20,20,20, .5)), url( '../images/Tuyen Dung.jpg');
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+}
+.header-hiring a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    background-color:#266d00;
+    color:white
+}
+    .header-hiring a:hover {
+        background-color: #00ff21
+    }
+h1 {
+    font-size: 70px;
+}
+#idthanhvien {
+    display: inline-block;
+    background-color: #266d00;
+    color:white;
+    font-size:50px;
+    padding:10px;
+}
+#idthongdiep td p {
+    display: inline-block;
+    width: 400px;
+    word-wrap: break-word;
+    text-align:justify;
+}
+#idvtht {
+    background: linear-gradient( rgba(20,20,20, .5), rgba(20,20,20, .5)), url( ../images/tuyendungText.jpg);
+    background-size: 100% auto;
+}
+    #idvtht div {
+        display: block;
+        height: 100%;
+        width: 50%;
+        word-wrap: break-word;
+        background-color: #dcdcdc;
+        padding:20px;
+        font-size:25px;
+    }
+.ungtuyen {
+    color:white;
+    display: inline-block;
+    padding: 10px;
+    background-color: #266d00;
+    text-decoration:none;
+}
+.ungtuyen:hover{
+    background-color:#00ff21
+}
