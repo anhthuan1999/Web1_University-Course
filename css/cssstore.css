@@ -1,0 +1,18 @@
+﻿.headerstore {
+    padding: 100px;
+    background: linear-gradient( rgba(20,20,20, .5), rgba(20,20,20, .5)), url( ../images/CoverCuahang.jpg);
+    background-size: 100% auto;
+}
+.headerstore h2 {
+    color: white ;
+    font-size: 30px;
+}
+.headerstore select {
+    font-size: 15px;
+    padding: 5px;
+}
+#idlistdanhsach{
+    color:black;
+    line-height:2;
+    padding-left:30px;
+}
