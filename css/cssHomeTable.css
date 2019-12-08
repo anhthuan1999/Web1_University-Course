@@ -1,0 +1,60 @@
+﻿
+#slide {
+    margin-left: 0%;
+    display: inline-block;
+    width: 500px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition-duration: 1s;
+}
+    #slide  p{
+        padding: 10px;
+    }
+
+.wrapper:hover #slide {
+    transition-duration: 1s;
+    margin-left: 700px;
+}
+
+#tableimginfo td {
+    background-size: 100% auto;
+    height: 300px;
+}
+    #idstory {
+        background: linear-gradient( rgba(70,70,70, .5), rgba(70,70,70, .5)), url(../images/Bgcauchuyen.jpg);
+    }
+    #idstore {
+        background: linear-gradient( rgba(70,70,70, .5), rgba(70,70,70, .5)), url(../images/BgCuahang.jpg);
+    }
+    #idbestsales {
+        background: linear-gradient( rgba(70,70,70, .5), rgba(70,70,70, .5)), url(../images/Bgbanchay.jpg);
+    }
+#idhotnews {
+    background: linear-gradient( rgba(70,70,70, .5), rgba(70,70,70, .5)), url(../images/Bgtinnoibat.jpg);
+}
+#tableimginfo .subheader p {
+    font-size: 50px;
+    background-color: rgba(255, 241, 208, 0.7);
+    border-radius:10px;
+    padding: 30px;
+    transition: 0.5s;
+    display: inline-block;
+}
+#tableimginfo a {
+    color: black;
+    text-decoration:none;
+}
+#idstory:hover p {
+    margin-bottom: 100px;
+}
+#idstore:hover p {
+    margin-bottom: 100px;
+}
+#idbestsales:hover p {
+    margin-bottom: 100px;
+}
+    
+    
+
+
+
