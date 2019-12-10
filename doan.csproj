@@ -1,0 +1,279 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82E6F1FD-5B13-49D0-A4C9-51FC28527494}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>doan</RootNamespace>
+    <AssemblyName>doan</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\cssbestsales.css" />
+    <Content Include="css\cssdetailregister.css" />
+    <Content Include="css\cssRegister.css" />
+    <Content Include="css\cssthucdon.css" />
+    <Content Include="data\chitiet.xml" />
+    <Content Include="data\product.xml" />
+    <Content Include="detaildiscount.html" />
+    <Content Include="detailhiring.html" />
+    <Content Include="detailregister.html" />
+    <Content Include="images\B01.png" />
+    <Content Include="images\B02.png" />
+    <Content Include="images\B03.png" />
+    <Content Include="images\B04.png" />
+    <Content Include="images\B05.png" />
+    <Content Include="images\B06.png" />
+    <Content Include="images\B07.png" />
+    <Content Include="images\Bgbanchay.jpg" />
+    <Content Include="images\Bgcauchuyen.jpg" />
+    <Content Include="images\BgCuahang.jpg" />
+    <Content Include="images\Bgtinnoibat.jpg" />
+    <Content Include="images\cauchuyenDangkytv.jpg" />
+    <Content Include="images\cauchuyenHanchedonhua.jpg" />
+    <Content Include="images\cauchuyenImageStory1.jpg" />
+    <Content Include="images\cauchuyenImageStory2.jpg" />
+    <Content Include="images\cauchuyenTuyendung.jpg" />
+    <Content Include="images\cauchuyenUudai.jpg" />
+    <Content Include="images\CoverCuahang.jpg" />
+    <Content Include="images\CoverMenu.jpg" />
+    <Content Include="images\cuahang1.jpg" />
+    <Content Include="images\cuahang2.jpg" />
+    <Content Include="images\cuahang3.jpg" />
+    <Content Include="images\cuahang4.jpg" />
+    <Content Include="images\cuahang5.jpg" />
+    <Content Include="images\cuahang6.jpg" />
+    <Content Include="images\cuahang7.jpg" />
+    <Content Include="images\fbicon.png" />
+    <Content Include="images\hanche1.jpg" />
+    <Content Include="images\hanche2.jpg" />
+    <Content Include="images\iconsearch.png" />
+    <Content Include="images\instagram.png" />
+    <Content Include="images\LOGO.png" />
+    <Content Include="images\member1.jpg" />
+    <Content Include="images\member2.jpg" />
+    <Content Include="images\Slideshow1.jpg" />
+    <Content Include="images\Slideshow4.jpg" />
+    <Content Include="images\Slideshow5.jpg" />
+    <Content Include="images\Tuyen Dung.jpg" />
+    <Content Include="images\Tuyendung1.jpg" />
+    <Content Include="images\Tuyendung2.jpg" />
+    <Content Include="images\Tuyendung3.jpg" />
+    <Content Include="images\tuyendungGiatricotloi.jpg" />
+    <Content Include="images\tuyendungSumenh.jpg" />
+    <Content Include="images\tuyendungTamnhin.jpg" />
+    <Content Include="images\tuyendungText.jpg" />
+    <Content Include="images\DX01.jpg" />
+    <Content Include="images\DX01.png" />
+    <Content Include="images\DX02.png" />
+    <Content Include="images\DX03.png" />
+    <Content Include="images\DX04.png" />
+    <Content Include="images\DX05.png" />
+    <Content Include="images\DX06.png" />
+    <Content Include="images\DX07.png" />
+    <Content Include="images\DX08.png" />
+    <Content Include="images\DX09.png" />
+    <Content Include="images\DX10.png" />
+    <Content Include="images\DX11.png" />
+    <Content Include="images\DX12.png" />
+    <Content Include="images\DX13.png" />
+    <Content Include="images\DX14.png" />
+    <Content Include="images\DX15.png" />
+    <Content Include="images\DX16.png" />
+    <Content Include="images\DX17.png" />
+    <Content Include="images\DX18.png" />
+    <Content Include="images\DX19.png" />
+    <Content Include="images\DX20.png" />
+    <Content Include="images\hoptac.jpg" />
+    <Content Include="images\mapq1.jpg" />
+    <Content Include="images\mapq11.jpg" />
+    <Content Include="images\mapq2.jpg" />
+    <Content Include="images\mapq3.jpg" />
+    <Content Include="images\mapq6.jpg" />
+    <Content Include="images\mapq8.jpg" />
+    <Content Include="images\maptd.jpg" />
+    <Content Include="images\ST01.png" />
+    <Content Include="images\ST02.png" />
+    <Content Include="images\ST03.png" />
+    <Content Include="images\ST04.png" />
+    <Content Include="images\T01.png" />
+    <Content Include="images\T02.png" />
+    <Content Include="images\T03.png" />
+    <Content Include="images\T04.png" />
+    <Content Include="images\T05.png" />
+    <Content Include="images\T06.png" />
+    <Content Include="images\T07.png" />
+    <Content Include="images\T08.png" />
+    <Content Include="images\T09.png" />
+    <Content Include="images\T10.png" />
+    <Content Include="images\T11.png" />
+    <Content Include="images\T12.png" />
+    <Content Include="images\T13.png" />
+    <Content Include="images\T14.png" />
+    <Content Include="images\TH01.png" />
+    <Content Include="images\TH02.png" />
+    <Content Include="images\TH03.png" />
+    <Content Include="images\TH04.png" />
+    <Content Include="images\TH05.png" />
+    <Content Include="images\TH06.png" />
+    <Content Include="images\TH07.png" />
+    <Content Include="images\TH08.png" />
+    <Content Include="images\TH09.png" />
+    <Content Include="images\TH10.png" />
+    <Content Include="images\TH11.png" />
+    <Content Include="images\TS01.png" />
+    <Content Include="images\TS02.png" />
+    <Content Include="images\TS03.png" />
+    <Content Include="images\TS04.png" />
+    <Content Include="images\TS05.png" />
+    <Content Include="images\TS06.png" />
+    <Content Include="images\TS07.png" />
+    <Content Include="images\TS08.png" />
+    <Content Include="images\TS09.png" />
+    <Content Include="images\TS10.png" />
+    <Content Include="images\TS11.png" />
+    <Content Include="images\TS12.png" />
+    <Content Include="images\TS13.png" />
+    <Content Include="images\TS14.png" />
+    <Content Include="images\Uudai1.jpg" />
+    <Content Include="images\Uudai2.jpg" />
+    <Content Include="images\Uudai3.jpg" />
+    <Content Include="images\Uudai4.jpg" />
+    <Content Include="images\uudaiCover.jpg" />
+    <Content Include="images\youtube.png" />
+    <Content Include="script\scriptbestsales.js" />
+    <Content Include="script\scriptdetaildiscount.js" />
+    <Content Include="script\scriptdetailhiring.js" />
+    <Content Include="script\scriptdetailregister.js" />
+    <Content Include="script\scriptheader.js" />
+    <Content Include="script\scriptmenu.js" />
+    <Content Include="script\scriptsearch.js" />
+    <Content Include="script\scriptslideshow.js" />
+    <Content Include="script\scriptstore.js" />
+    <Content Include="bestsales.html" />
+    <Content Include="css\csshiring.css" />
+    <Content Include="css\cssHomeTable.css" />
+    <Content Include="css\cssSlideshow.css" />
+    <Content Include="css\cssMenu.css" />
+    <Content Include="css\cssstore.css" />
+    <Content Include="discount.html" />
+    <Content Include="hanchedonhua.html" />
+    <Content Include="hiring.html" />
+    <Content Include="index.html" />
+    <Content Include="hoptac.html" />
+    <Content Include="menu.html" />
+    <Content Include="registermember.html" />
+    <Content Include="search.html" />
+    <Content Include="store.html" />
+    <Content Include="story.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50699</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50699/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

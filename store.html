@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cửa hàng</title>
+    <link href="images/LOGO.png" rel="icon" type="image/gif">
+    <link rel="stylesheet" href="../css/cssmenu.css" type="text/css" />
+    <link rel="stylesheet" href="../css/cssstore.css" type="text/css" />
+    <script src="../script/scriptstore.js"></script>
+    <script src="../script/scriptheader.js"></script>
+</head>
+<body style="margin:0">
+    <header>
+        <ul>
+            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.png" height="50" width="50" /></a></li>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="story.html">Câu chuyện</a></li>
+            <li onmousemove="showmenu(0)" onmouseout="anmenu()">
+                <a href="menu.html" title="Thực đơn">Thực đơn</a>
+                <ul>
+                    <li><a href="menu.html#daxay">Thức uống</a></li>
+                    <li><a href="menu.html#banhngot">Bánh ngọt</a></li>
+                    <li><a href="menu.html#sinhto">Sinh tố</a></li>
+                </ul>
+            </li>
+            <li><a href="discount.html" title="Ưu đãi">Ưu đãi</a></li>
+            <li><a href="hiring.html" title="Tuyển dụng">Tuyển dụng</a></li>
+            <li><a href="store.html" title="Cửa hàng">Cửa hàng</a></li>
+            <li onmousemove="showmenu(1)" onmouseout="anmenu()">
+                <a href="#" title="Liên hệ">Liên hệ</a>
+                <ul>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc3kvbnCoOYI-ipC4OBfwox8ynZHJLYiu_plTYVaag3libLSg/viewform?usp=sf_link" target="_blank">Góp ý</a></li>
+                    <li><a href="hoptac.html">Hợp tác</a></li>
+                    <li><a href="registermember.html">Thành viên</a></li>
+                </ul>
+            </li>
+            <li class="search">
+                <input type="text" placeholder="Tìm sản phẩm" name="txtsearch" id="txtsearch" onclick="autocompletesearch()" />
+                <img src="images/iconsearch.png" height="21" width="21" onclick="xulySearch()" />
+            </li>
+        </ul>
+
+    </header>
+        <table width="100%">
+            <tr>
+                <td colspan="2" class="headerstore">
+                    <h2 align="center">Tìm cửa hàng Javascript</h2>
+                    <div align="center">
+                        <select onchange="getValueSelect(this.value)">
+                            <option selected="selected" value="default">Chọn nơi bạn muốn đến</option>
+                            <option value="CNQ1">Quận 1</option>
+                            <option value="CNQ2">Quận 2</option>
+                            <option value="CNQ3">Quận 3</option>
+                            <option value="CNQ6">Quận 6</option>
+                            <option value="CNQ8">Quận 8</option>
+                            <option value="CNQ11">Quận 11</option>
+                            <option value="CNQTD">Quận Thủ Đức</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%" valign="top" align="left">
+                    <div align="center" >
+                        <p id="idlistdanhsach" name="idlistdanhsach"></p>
+                        <img id="imgstore"/>
+                    </div>
+                </td>
+                <td width="1300" id="idmap" height="400">
+                </td>
+            </tr>
+        </table>
+
+
+
+        <footer>
+            <div align="center" id="footermain">
+                <div id="header">
+                    <a href="index.html"><img src="../images/LOGO.png" height="80" width="80" /></a>
+
+                    <p>
+                        Copyright &copy; 2019 JavaScript. All rights reserved.
+                    </p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="liheaderfooter">
+                            <span class="header-footer">TIN TỨC</span>
+                        </li>
+                        <li><a href="story.html">Về chúng tôi</a></li>
+                        <li><a href="bestsales.html">Hôm nay tui có</a></li>
+                    </ul>
+                </div>
+                <div>
+
+                    <ul>
+                        <li class="liheaderfooter">
+                            <span class="header-footer">LIÊN HỆ</span>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2rde2Gp" target="_blank">Góp ý</a>
+                        </li>
+                        <li>
+                            <a href="hoptac.html">Hợp tác</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="vertical-align:top;">
+
+                    <ul>
+                        <li class="liheaderfooter">
+                            <span class="header-footer">KÊNH TRUYỀN THÔNG</span><br />
+
+                        </li>
+                        <li class="liheaderfooter">
+                            <img src="../images/fbicon.png" height="30" width="30" />
+                            <img src="../images/instagram.png" height="45" width="45" />
+                            <img src="../images/youtube.png" height="30" width="30" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
