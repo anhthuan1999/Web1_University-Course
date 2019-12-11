@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="images/LOGO.png" rel="icon" type="image/gif">
+    <meta charset="utf-8" />
+    <title>Bán chạy nhất</title>
+    <link rel="stylesheet" href="../css/cssmenu.css" />
+    <link rel="stylesheet" href="../css/cssbestsales.css" />
+    <script src="../script/scriptbestsales.js"></script>
+    <script src="script/scriptheader.js"></script>
+</head>
+<body onload="loading(), loadingshopping()" style="margin:0">
+    <header>
+        <ul>
+            <li class="lilogo"><a href="index.html" class="logo"><img src="../images/LOGO.png" height="50" width="50" /></a></li>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="story.html">Câu chuyện</a></li>
+            <li onmousemove="showmenu(0)" onmouseout="anmenu()">
+                <a href="menu.html" title="Thực đơn">Thực đơn</a>
+                <ul>
+                    <li><a href="menu.html#daxay">Thức uống</a></li>
+                    <li><a href="menu.html#banhngot">Bánh ngọt</a></li>
+                    <li><a href="menu.html#sinhto">Sinh tố</a></li>
+                </ul>
+            </li>
+            <li><a href="discount.html" title="Ưu đãi">Ưu đãi</a></li>
+            <li><a href="hiring.html" title="Tuyển dụng">Tuyển dụng</a></li>
+            <li><a href="store.html" title="Cửa hàng">Cửa hàng</a></li>
+            <li onmousemove="showmenu(1)" onmouseout="anmenu()">
+                <a href="#" title="Liên hệ">Liên hệ</a>
+                <ul>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc3kvbnCoOYI-ipC4OBfwox8ynZHJLYiu_plTYVaag3libLSg/viewform?usp=sf_link" target="_blank">Góp ý</a></li>
+                    <li><a href="hoptac.html">Hợp tác</a></li>
+                    <li><a href="registermember.html">Thành viên</a></li>
+                </ul>
+            </li>
+            <li class="search">
+                <input type="text" placeholder="Tìm sản phẩm" name="txtsearch" id="txtsearch" onclick="autocompletesearch()" />
+                <img src="images/iconsearch.png" height="21" width="21" onclick="xulySearch()" />
+            </li>
+            <li class="shopping">
+                <img src="images/iconshopping.png" height="21" width="21"
+                     onclick="javascript: window.location.href = 'dathang.html'; HienThi();" />
+                <span id="numproduct">0</span>
+            </li>
+        </ul>
+
+    </header>
+
+    <div id="overlay">
+        <div id="text" align="center">
+            <div align="right" onclick="javascript: document.getElementById('overlay').style.display = 'none';"
+                 style="color:white;padding:10px;font-size:35px">
+                X
+            </div>
+            <table id="mainover">
+            </table>
+            <hr />
+            <form name="frm">
+                <table id="choose" width="500px">
+                    <tr>
+                        <td colspan="2">Chọn loại</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="loai" id="idlanh" value="lanh" checked="checked" />
+                            <label for="idlanh">Lạnh</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="loai" id="idnong" value="nong" />
+                            <label for="idnong">Nóng</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">Chọn đường</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="duong" id="id30duong" value="30" />
+                            <label for="id30duong">30%</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="duong" id="id50duong" value="50" />
+                            <label for="id50duong">50%</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="duong" id="id70duong" value="70" />
+                            <label for="id70duong">70%</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="duong" id="id100duong" value="100" checked="checked" />
+                            <label for="id100duong">100%</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Chọn đá</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="da" id="id30da" value="30" />
+                            <label for="id30da">30%</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="da" id="id50da" value="50" />
+                            <label for="id50da">50%</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="da" id="id70da" value="70" checked="checked" />
+                            <label for="id70da">70%</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="da" id="id100da" value="100" />
+                            <label for="id100da">100%</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">Chọn Topping</td>
+                    </tr>
+
+
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div align="center">
+        <table width="1000px" id="maintable" cellspacing="35">
+            <thead>
+                <tr>
+                    <td align="left" class="tdheader">
+                        <span class="bestsales">
+                            <a href="#">
+                                Bán chạy nhất
+                            </a>
+                        </span>
+                    </td>
+                    <td class="tdheader">&nbsp;</td>
+                    <td align="right" class="tdheader">
+                        <span class="all">
+                            <a href="menu.html">
+                                Xem tất cả sản phẩm
+                            </a>
+                        </span>
+                    </td>
+
+                </tr>
+            </thead>
+            <tbody id="mainbody">
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div align="center" id="footermain">
+            <div id="header">
+                <a href="index.html"><img src="../images/LOGO.png" height="80" width="80" /></a>
+
+                <p>
+                    Copyright &copy; 2019 JavaScript. All rights reserved.
+                </p>
+            </div>
+            <div>
+                <ul>
+                    <li class="liheaderfooter">
+                        <span class="header-footer">TIN TỨC</span>
+                    </li>
+                    <li><a href="story.html">Về chúng tôi</a></li>
+                    <li><a href="bestsales.html">Hôm nay tui có</a></li>
+                </ul>
+            </div>
+            <div>
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <span class="header-footer">LIÊN HỆ</span>
+                    </li>
+                    <li>
+                        <a href="http://bit.ly/2rde2Gp" target="_blank">Góp ý</a>
+                    </li>
+                    <li>
+                        <a href="hoptac.html">Hợp tác</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="vertical-align:top;">
+
+                <ul>
+                    <li class="liheaderfooter">
+                        <span class="header-footer">KÊNH TRUYỀN THÔNG</span><br />
+
+                    </li>
+                    <li class="liheaderfooter">
+                        <img src="../images/fbicon.png" height="30" width="30" />
+                        <img src="../images/instagram.png" height="45" width="45" />
+                        <img src="../images/youtube.png" height="30" width="30" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
