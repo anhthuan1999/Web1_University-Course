@@ -1,4 +1,4 @@
-# thuantrananh.github.io
+# Web 1 Project
 
 Our project is made by 404NotFound Team:
 1. Kim Dang Thi Thu
